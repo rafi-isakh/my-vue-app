@@ -1,27 +1,17 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        myapp
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="container mx-auto">
+    <div class="content">
+      <div>
+        <img src="https://www.iconarchive.com/show/google-play-icons-by-marcus-roberto/Google-Chrome-icon.html" alt="cover">
+        <div>Test content</div>
+      </div>
+      <div>
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa0%2FFirefox_logo%252C_2019.svg%2F1200px-Firefox_logo%252C_2019.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFirefox&tbnid=Hz4ZYpq6-75mWM&vet=12ahUKEwjAy_TS6tLtAhUV_TgGHdDYAb8QMygAegUIARDQAQ..i&docid=FYYTn0qPa5QmAM&w=1200&h=1131&q=firefox&hl=en&safe=strict&ved=2ahUKEwjAy_TS6tLtAhUV_TgGHdDYAb8QMygAegUIARDQAQ" alt="cover">
+        <div>Test content</div>
+      </div>
+      <div>
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F52%2FSafari_browser_logo.svg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSafari_(web_browser)&tbnid=9GT57xl31wrC9M&vet=12ahUKEwipyubZ6tLtAhWYgGMGHXJ6ACgQMygAegUIARDVAQ..i&docid=ppHo3PTdEjipqM&w=250&h=249&q=safari&hl=en&safe=strict&ved=2ahUKEwipyubZ6tLtAhWYgGMGHXJ6ACgQMygAegUIARDVAQ" alt="cover">
+        <div>Test content</div>
       </div>
     </div>
   </div>

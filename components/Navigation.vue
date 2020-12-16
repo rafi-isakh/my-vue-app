@@ -10,9 +10,12 @@
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <nuxt-link to="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</nuxt-link>
-                <nuxt-link to="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</nuxt-link>
-                <nuxt-link to="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</nuxt-link>
+                <nuxt-link to="/" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('dashboard')"
+                  :class="dashboard ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">Dashboard</nuxt-link>
+                <nuxt-link to="#" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('faq')"
+                  :class="faq ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">FAQ</nuxt-link>
+                <nuxt-link to="#" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('about')"
+                  :class="about ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">About</nuxt-link>
               </div>
             </div>
           </div>
@@ -27,3 +30,32 @@
     </nav>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      dashboard: false,
+      faq: false,
+      about: false
+    }
+  },
+  methods: {
+    toggleActiveClass(el) {
+      this.clearAll()
+      if(el === 'dashboard') {
+        this.dashboard = !this.dashboard
+      } else if (el === 'faq') {
+        this.faq = !this.faq
+      } else if (el === 'about') {
+        this.about = !this.about
+      }
+    },
+    clearAll() {
+      this.dashboard = false;
+      this.faq = false;
+      this.about = false;
+    }
+  }
+}
+</script>

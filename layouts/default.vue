@@ -1,10 +1,6 @@
 <template>
   <div class="font-sans text-black antialiased">
-<<<<<<< HEAD
     <Navigation />
-=======
-    <Navigation></Navigation>
->>>>>>> e955e2e... add navigation section
     <Nuxt />
   </div>
 </template>

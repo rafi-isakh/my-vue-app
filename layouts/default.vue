@@ -1,8 +1,23 @@
 <template>
-  <div>
+  <div class="font-sans text-black antialiased">
+<<<<<<< HEAD
+    <Navigation />
+=======
+    <Navigation></Navigation>
+>>>>>>> e955e2e... add navigation section
     <Nuxt />
   </div>
 </template>
+
+<script>
+import Navigation from '@/components/Navigation'
+
+export default {
+  components: {
+    Navigation
+  }
+}
+</script>
 
 <style>
 html {

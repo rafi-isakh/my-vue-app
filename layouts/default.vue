@@ -1,16 +1,19 @@
 <template>
-  <div class="font-sans text-black antialiased">
+  <div class="font-sans text-black antialiased flex flex-col h-screen">
     <Navigation />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation'
+import Footer from './partials/footer'
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    Footer
   }
 }
 </script>

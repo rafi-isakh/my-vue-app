@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="m-auto">
     <div class="content">
       <div>
         <img src="https://www.iconarchive.com/show/google-play-icons-by-marcus-roberto/Google-Chrome-icon.html" alt="cover">

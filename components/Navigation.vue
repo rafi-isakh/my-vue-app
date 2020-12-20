@@ -14,7 +14,7 @@
                   :class="dashboard ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">Dashboard</nuxt-link>
                 <nuxt-link to="#" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('faq')"
                   :class="faq ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">FAQ</nuxt-link>
-                <nuxt-link to="#" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('about')"
+                <nuxt-link :to="localePath('about')" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('about')"
                   :class="about ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">About</nuxt-link>
               </div>
             </div>

@@ -1,3 +1,5 @@
+import i18n from './config/i18n'
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -28,6 +30,28 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    [
+      'nuxt-i18n',
+      {
+        strategy: 'prefix_except_default',
+        defaultLocale: 'en',
+        locales: [
+          {
+            code: 'en',
+            name: 'English'
+          },
+          {
+            code: 'fr',
+            name: 'Français'
+          },
+          {
+            code: 'es',
+            name: 'Español'
+          }
+        ],
+        vueI18n: i18n
+      }
+    ]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

@@ -23,7 +23,7 @@
             <div class="ml-4 flex items-center md:ml-6">
               <nuxt-link to="login" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2
                 rounded-md text-sm font-medium"  @click.native="toggleActiveClass('')">Login</nuxt-link>
-              <nuxt-link to="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2
+              <nuxt-link to="register" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2
                 rounded-md text-sm font-medium" @click.native="toggleActiveClass('')">Signup</nuxt-link>
             </div>
           </div>

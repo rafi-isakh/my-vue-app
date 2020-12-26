@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
+  <div class="container mx-auto">
+=======
   <div class="m-auto">
+>>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760
     <div class="content">
       <div>
         <img src="https://www.iconarchive.com/show/google-play-icons-by-marcus-roberto/Google-Chrome-icon.html" alt="cover">

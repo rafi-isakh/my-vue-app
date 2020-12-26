@@ -10,21 +10,32 @@
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+<<<<<<< HEAD
+                <nuxt-link to="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</nuxt-link>
+                <nuxt-link to="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</nuxt-link>
+                <nuxt-link to="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</nuxt-link>
+=======
                 <nuxt-link to="/" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('dashboard')"
                   :class="dashboard ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">Dashboard</nuxt-link>
                 <nuxt-link to="#" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('faq')"
                   :class="faq ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">FAQ</nuxt-link>
                 <nuxt-link :to="localePath('about')" class="px-3 py-2 rounded-md text-sm font-medium" @click.native="toggleActiveClass('about')"
                   :class="about ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'">About</nuxt-link>
+>>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760
               </div>
             </div>
           </div>
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
+<<<<<<< HEAD
+              <nuxt-link to="login" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</nuxt-link>
+              <nuxt-link to="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Signup</nuxt-link>
+=======
               <nuxt-link to="login" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2
                 rounded-md text-sm font-medium"  @click.native="toggleActiveClass('')">Login</nuxt-link>
               <nuxt-link to="register" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2
                 rounded-md text-sm font-medium" @click.native="toggleActiveClass('')">Signup</nuxt-link>
+>>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760
             </div>
           </div>
         </div>
@@ -32,6 +43,8 @@
     </nav>
   </div>
 </template>
+<<<<<<< HEAD
+=======
 
 <script>
 export default {
@@ -61,3 +74,4 @@ export default {
   }
 }
 </script>
+>>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760

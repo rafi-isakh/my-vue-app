@@ -1,6 +1,11 @@
 <template>
+<<<<<<< HEAD
+  <div class="flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md space-y-8">
+=======
   <div class="flex bg-gray-50 px-4 m-auto">
     <div class="max-w-md space-y-8 content">
+>>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760
       <div>
         <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -49,4 +54,8 @@
       </form>
     </div>
   </div>
+<<<<<<< HEAD
 </template>
+=======
+</template>
+>>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760

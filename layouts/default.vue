@@ -1,11 +1,6 @@
 <template>
-<<<<<<< HEAD
-  <div class="font-sans text-black antialiased">
-    <Navigation></Navigation>
-=======
   <div class="font-sans text-black antialiased flex flex-col h-screen">
     <Navigation />
->>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760
     <Nuxt />
     <Footer />
   </div>
@@ -13,19 +8,12 @@
 
 <script>
 import Navigation from '@/components/Navigation'
-<<<<<<< HEAD
-
-export default {
-  components: {
-    Navigation
-=======
 import Footer from './partials/footer'
 
 export default {
   components: {
     Navigation,
     Footer
->>>>>>> 2fe78af2494a1b7298df73346e85783a7f019760
   }
 }
 </script>

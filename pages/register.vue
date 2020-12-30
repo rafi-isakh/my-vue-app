@@ -8,7 +8,6 @@
         </h2>
       </div>
       <form class="mt-8 space-y-6" action="#" method="POST" @submit.prevent="handleSubmit">
-        <input type="hidden" name="remember" value="true">
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
             <label for="email-address" class="sr-only">Email address</label>
@@ -41,7 +40,6 @@
               </select>
           </div>
         </div>
-
         <div>
           <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             <span class="absolute left-0 inset-y-0 flex items-center pl-3">
@@ -52,6 +50,9 @@
             </span>
             Register
           </button>
+        </div>
+        <div>
+          <p class="text-xs text-red-500">{{errorMessage}}</p>
         </div>
       </form>
     </div>
@@ -65,12 +66,28 @@ export default {
       email: "",
       password: "",
       confirmPassword: "",
-      role:""
+      role:"",
+      errorMessage: "",
     }
   },
   methods: {
     handleSubmit() {
       console.log("Form submitted")
+      const user = {
+        email: this.email,
+        password: this.password,
+        password_confirmation: this.confirmPassword,
+        roleId: this.role
+      }
+      this.$register.create(user).then(() => this.loginRedirect()).catch(error => this.printError(error))
+    },
+    printError(error) {
+      for (const [key, message] of Object.entries(error.response.data)) {
+        this.errorMessage = `* ${message[0]}`
+      }
+    },
+    loginRedirect() {
+      window.location.href = 'login'
     }
   }
 }

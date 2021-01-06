@@ -2,6 +2,7 @@
   <div class="font-sans text-black antialiased flex flex-col h-screen">
     <Navigation />
     <Nuxt />
+    <CookieControl />
     <Footer />
   </div>
 </template>

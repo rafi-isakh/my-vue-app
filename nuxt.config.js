@@ -58,7 +58,36 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    [
+      'nuxt-cookie-control',
+      {
+        barPosition: "bottom-right",
+        blockIframe: true,
+        controlButton: false,
+        colors: {
+          barTextColor: "#fff",
+          barBackground: "#12957b",
+          barButtonColor: "#fff",
+          barButtonBackground: "#206569",
+          barButtonHoverColor: "#fff",
+          barButtonHoverBackground: "#2e495e",
+          modalButtonBackground: "#206569",
+          modalButtonHoverColor: "#fff",
+          controlButtonBackground: "#12957b",
+          controlButtonHoverBackground: "#2e495e",
+          controlButtonIconHoverColor: "#fff",
+          controlButtonIconColor: "#fff",
+          modalButtonHoverBackground: "#2e495e",
+          checkboxActiveBackground: "#2e495e",
+          checkboxInactiveBackground: "#ede1e1",
+          checkboxActiveCircleBackground: "#00c58e",
+          checkboxInactiveCircleBackground: "#f44336",
+          checkboxDisabledBackground: "#ddd",
+          checkboxDisabledCircleBackground: "#fff"
+        }
+      }
+    ]
   ],
 
   axios: {
@@ -66,7 +95,48 @@ export default {
     baseURL: process.env.API_URL,
   },
 
+  cookies: {
+    necessary: [
+      {
+        name: {
+          en: "Default cookies",
+          hr: "Osnovni kolačići"
+        },
+
+        description: {
+          en: "Used for cookie control."
+        },
+        cookies: ["cookie_control_consent", "cookie_control_enabled_cookies"]
+      }
+    ],
+    optional: [
+      {
+        name: {
+          en: "Google Analytics",
+          es: "Google Analytics",
+          fr: "Google Analytics"
+        },
+        description: {
+          en:
+            "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic."
+        },
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-138616567-1",
+        async: true,
+        cookies: ["_ga", "_gat_gtag_UA_138616567_1", "_gid"],
+        accepted: () => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "UA-138616567-1");
+        }
+      }
+    ]
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extend(config, ctx) {}
   }
 }

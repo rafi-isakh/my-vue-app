@@ -14,6 +14,20 @@
 
 <script>
 export default {
+  data() {
+    return {
+      cookies: this.$cookies,
+    }
+  },
+
+  mounted: function() {
+    console.log("Mounted...", this.cookies.get('cookie_control_consent'))
+    const isConsentAgreed = this.cookies.get('cookie_control_consent')
+    if (!isConsentAgreed) {
+      window.location.reload();
+    }
+  },
+  
   computed:{
     currentYear: function() {
       let d = new Date()

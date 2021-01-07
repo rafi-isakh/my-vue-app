@@ -62,7 +62,7 @@ export default {
     [
       'nuxt-cookie-control',
       {
-        barPosition: "bottom-right",
+        barPosition: "bottom-full",
         blockIframe: true,
         controlButton: false,
         colors: {
@@ -106,7 +106,7 @@ export default {
         description: {
           en: "Used for cookie control."
         },
-        cookies: ["cookie_control_consent", "cookie_control_enabled_cookies"]
+        cookies: ["cookie_control_consent", "access_token"]
       }
     ],
     optional: [

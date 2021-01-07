@@ -61,6 +61,7 @@ export default {
       email: "",
       password: "",
       errorMessage: "",
+      cookie: this.$cookies,
     }
   },
   methods: {
@@ -69,9 +70,12 @@ export default {
         email: this.email,
         password: this.password
       }
-      console.log("Login " + credential)
+
       let res = await this.$axios.post('/auth/login', credential).catch(err => this.printError(err))
-      console.log(res)
+      if (res !== undefined) {
+        this.cookie.set({"name":"access_token", "value":res.data.token})
+        window.location.href = '/'
+      }
     },
     printError(error) {
       this.errorMessage = error.response.data.message

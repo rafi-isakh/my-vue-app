@@ -75,12 +75,16 @@ export default {
       if (res !== undefined) {
         this.cookie.set({"name":"access_token", "value":res.data.token})
 <<<<<<< HEAD
+<<<<<<< HEAD
         window.location.href = '/'
 =======
 <<<<<<< HEAD
 =======
         window.location.href = '/'
 >>>>>>> set login data into cookie
+>>>>>>> set login data into cookie
+=======
+        window.location.href = '/'
 >>>>>>> set login data into cookie
       }
     },

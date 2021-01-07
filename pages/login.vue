@@ -74,7 +74,14 @@ export default {
       let res = await this.$axios.post('/auth/login', credential).catch(err => this.printError(err))
       if (res !== undefined) {
         this.cookie.set({"name":"access_token", "value":res.data.token})
+<<<<<<< HEAD
         window.location.href = '/'
+=======
+<<<<<<< HEAD
+=======
+        window.location.href = '/'
+>>>>>>> set login data into cookie
+>>>>>>> set login data into cookie
       }
     },
     printError(error) {

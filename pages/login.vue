@@ -29,7 +29,7 @@
           <!-- </div> -->
 
           <div class="text-sm">
-            <nuxt-link to="forgot_password" class="font-medium text-indigo-600 hover:text-indigo-500">
+            <nuxt-link to="forgot-password" class="font-medium text-indigo-600 hover:text-indigo-500">
               Forgot your password?
             </nuxt-link>
           </div>
@@ -76,6 +76,26 @@ export default {
         this.cookie.set({"name":"access_token", "value":res.data.token})
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        window.location.href = '/'
+=======
+<<<<<<< HEAD
+=======
+        window.location.href = '/'
+>>>>>>> set login data into cookie
+>>>>>>> set login data into cookie
+=======
+>>>>>>> set login data into cookie
+=======
+=======
+>>>>>>> set login data into cookie
+=======
+>>>>>>> set login data into cookie
+=======
+>>>>>>> set login data into cookie
         window.location.href = '/'
 =======
 <<<<<<< HEAD

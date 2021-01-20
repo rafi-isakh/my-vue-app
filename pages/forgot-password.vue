@@ -58,7 +58,7 @@ export default {
       console.log("Result " + res)
       if (res !== undefined) {
         this.error = false
-        this.successMessage = "Password has been reset. Please login with your new password"
+        this.successMessage = "Reset link has been sent. Please check your email"
       }
     },
     printError(error) {

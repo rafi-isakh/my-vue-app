@@ -1,5 +1,9 @@
 # myapp
 
+## Environment Setup
+> Create .env file in the root folder and specify these following variables
+- APP_URL (backend service URL), e.g. http://localhost:8000
+
 ## Build Setup
 
 ```bash
